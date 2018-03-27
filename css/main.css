@@ -1,7 +1,7 @@
 body {
   font-size: 1rem;
   line-height: 1.25; }
-  @media screen and (min-width: 48em) {
+  @media all and (min-width: 48em) {
     body {
       font-size: 1rem;
       line-height: 1.375; } }
@@ -9,11 +9,11 @@ body {
 h1, .h1 {
   font-size: 2rem;
   line-height: 1.25; }
-  @media screen and (min-width: 48em) {
+  @media all and (min-width: 48em) {
     h1, .h1 {
       font-size: 2.5rem;
       line-height: 1.125; } }
-  @media screen and (min-width: 62em) {
+  @media all and (min-width: 62em) {
     h1, .h1 {
       font-size: 3rem;
       line-height: 1.05; } }
@@ -21,11 +21,11 @@ h1, .h1 {
 h1, .h1 {
   font-size: 1.625rem;
   line-height: 1.15384615; }
-  @media screen and (min-width: 48em) {
+  @media all and (min-width: 48em) {
     h1, .h1 {
       font-size: 2rem;
       line-height: 1.25; } }
-  @media screen and (min-width: 62em) {
+  @media all and (min-width: 62em) {
     h1, .h1 {
       font-size: 2.25rem;
       line-height: 1.25; } }
@@ -33,11 +33,11 @@ h1, .h1 {
 h2, .h2 {
   font-size: 1.375rem;
   line-height: 1.13636364; }
-  @media screen and (min-width: 48em) {
+  @media all and (min-width: 48em) {
     h2, .h2 {
       font-size: 1.5rem;
       line-height: 1.25; } }
-  @media screen and (min-width: 62em) {
+  @media all and (min-width: 62em) {
     h2, .h2 {
       font-size: 1.75rem;
       line-height: 1.25; } }
@@ -45,14 +45,14 @@ h2, .h2 {
 h3, .h3 {
   font-size: 1.125rem;
   line-height: 1.11111111; }
-  @media screen and (min-width: 48em) {
+  @media all and (min-width: 48em) {
     h3, .h3 {
       line-height: 1.22222222; } }
 
 blockquote {
   font-size: 1.25rem;
   line-height: 1.25; }
-  @media screen and (min-width: 48em) {
+  @media all and (min-width: 48em) {
     blockquote {
       font-size: 1.5rem;
       line-height: 1.45833333; } }
@@ -79,7 +79,7 @@ body {
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
     margin: auto;
     padding: 1.44rem; }
-    @media screen and (min-width: 48em) {
+    @media all and (min-width: 48em) {
       body article#cv {
         display: flex;
         max-width: 75rem;
@@ -90,7 +90,7 @@ body {
       margin: 0 auto;
       min-width: 17.5rem;
       max-width: 17.5rem; }
-      @media screen and (min-width: 48em) {
+      @media all and (min-width: 48em) {
         body article#cv > div#sidebar {
           border-right: 0.0625rem groove #000;
           padding-right: 1.44rem; } }
@@ -124,7 +124,7 @@ body {
         body article#cv > div#sidebar > section#langs > ul > li > h3 > span.level {
           font-size: 80%;
           font-weight: normal; }
-    @media screen and (min-width: 48em) {
+    @media all and (min-width: 48em) {
       body article#cv > div#content {
         padding-left: 1.44rem; } }
     body article#cv > div#content > section > h2 {
@@ -148,5 +148,14 @@ body {
     body article#cv > div#content > section#experiences > div > ul, body article#cv > div#content > section#projects > div > ul {
       list-style: square;
       padding-left: 2.5rem; }
+
+@media print {
+  body {
+    background: none;
+    padding: 0; }
+    body article#cv {
+      background-color: transparent;
+      box-shadow: none;
+      padding: 0; } }
 
 /*# sourceMappingURL=main.css.map */
