@@ -118,12 +118,15 @@ body {
         font-weight: normal; }
       body article#cv > div#sidebar > section#education > ul > li:not(:last-child) {
         margin-bottom: 0.72rem; }
-      body article#cv > div#sidebar > section#langs > ul > li > h3 {
-        display: flex;
-        justify-content: space-between; }
-        body article#cv > div#sidebar > section#langs > ul > li > h3 > span.level {
-          font-size: 80%;
-          font-weight: normal; }
+      body article#cv > div#sidebar > section#langs > ul {
+        max-width: 45%; }
+        body article#cv > div#sidebar > section#langs > ul > li > h3 {
+          display: flex;
+          justify-content: space-between; }
+          body article#cv > div#sidebar > section#langs > ul > li > h3 > span.level {
+            font-size: 80%;
+            font-weight: normal;
+            line-height: 1.7; }
     @media all and (min-width: 48em) {
       body article#cv > div#content {
         padding-left: 1.44rem; } }
