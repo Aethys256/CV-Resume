@@ -7,18 +7,6 @@ body {
       line-height: 1.375; } }
 
 h1, .h1 {
-  font-size: 2rem;
-  line-height: 1.25; }
-  @media all and (min-width: 48em) {
-    h1, .h1 {
-      font-size: 2.5rem;
-      line-height: 1.125; } }
-  @media all and (min-width: 62em) {
-    h1, .h1 {
-      font-size: 3rem;
-      line-height: 1.05; } }
-
-h1, .h1 {
   font-size: 1.625rem;
   line-height: 1.15384615; }
   @media all and (min-width: 48em) {
